@@ -581,6 +581,9 @@ fn find_installed_targets() -> Vec<PathBuf> {
         "@anthropic-ai/claude-code/cli.js",
         "@anthropic-ai/claude-code/claude",
         "@anthropic-ai/claude-code/claude.exe",
+        "@anthropic-ai/claude-code/bin/cli.js",
+        "@anthropic-ai/claude-code/bin/claude",
+        "@anthropic-ai/claude-code/bin/claude.exe",
     ];
 
     for dir in search_dirs {
