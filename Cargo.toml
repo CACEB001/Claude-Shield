@@ -1,0 +1,18 @@
+[package]
+name = "claude-shield"
+version = "1.0.0"
+edition = "2021"
+authors = ["CACEB001"]
+description = "A zero-dependency, ultra-lightweight automated protection suite and sentinel daemon for Claude Code CLI written in Rust. Safely bypasses hidden timezone telemetry and regional steganography checks."
+license = "MIT"
+
+[dependencies]
+# Zero dependencies for maximum portability, security, and lightning-fast compilation.
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true # Strip symbols and debug info automatically
+
